@@ -271,7 +271,7 @@
         </div>
     </section>
 
-    <!-- REVIEWS SECTION (UPDATED ORDER: 3, 4, 5, 1, 2, 6, 7, 8) -->
+    <!-- REVIEWS SECTION -->
     <section class="py-24 bg-white overflow-hidden reveal">
         <div class="px-6 mb-10 text-center">
             <h2 class="font-serif text-3xl md:text-4xl font-bold">Відгуки</h2>
@@ -340,7 +340,6 @@
     </footer>
 
     <!-- LIGHTBOX MODAL (For Reviews) -->
-    <!-- Z-index 60 to be on top of everything -->
     <div id="lightbox" class="lightbox fixed inset-0 z-[60] bg-black/95 flex items-center justify-center p-4 backdrop-blur-sm cursor-zoom-out" onclick="closeLightbox()">
         
         <!-- Close Button -->
@@ -374,12 +373,21 @@
             </div>
 
             <form action="YOUR_GOOGLE_SCRIPT_URL" method="POST" class="space-y-5">
+                <!-- 1. Name Field -->
                 <div>
                     <input type="text" name="name" required placeholder="Ваше ім'я" 
                         class="w-full bg-transparent border-b border-gray-300 py-3 text-sm focus:border-black focus:outline-none transition-colors">
                 </div>
+
+                <!-- 2. Phone Field -->
                 <div>
-                    <input type="text" name="contact" required placeholder="Телефон або @instagram" 
+                    <input type="tel" name="phone" required placeholder="Телефон" 
+                        class="w-full bg-transparent border-b border-gray-300 py-3 text-sm focus:border-black focus:outline-none transition-colors">
+                </div>
+
+                <!-- 3. Social Field -->
+                <div>
+                    <input type="text" name="social" required placeholder="@Instagram / Telegram" 
                         class="w-full bg-transparent border-b border-gray-300 py-3 text-sm focus:border-black focus:outline-none transition-colors">
                 </div>
 
