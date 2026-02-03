@@ -42,7 +42,7 @@
         }
     </script>
 
-    <!-- Facebook Pixel (Оставляем пустым, если нет ID) -->
+    <!-- Meta Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -52,9 +52,13 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        // fbq('init', 'https://www.facebook.com/tr?id=1230047148487254&ev=PageView&noscript=1'); 
-        // fbq('track', 'PageView');
+        fbq('init', '1230047148487254');
+        fbq('track', 'PageView');
     </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1230047148487254&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
     <style>
         html { scroll-behavior: smooth; }
@@ -63,7 +67,6 @@
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         
-        /* ИСПРАВЛЕНИЕ: Блоки теперь видны сразу */
         .reveal { 
             opacity: 1; 
             transform: translateY(0); 
@@ -223,6 +226,7 @@
         </div>
         <div class="w-full overflow-x-auto no-scrollbar pl-6 pb-8">
             <div class="flex gap-4 w-max">
+                <!-- Original 4 Reviews -->
                 <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('rew3.JPG')">
                     <img src="rew3.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=No+Image'" class="max-w-full max-h-full object-contain">
                 </div>
@@ -234,6 +238,38 @@
                 </div>
                  <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('rew1.JPG')">
                     <img src="rew1.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=No+Image'" class="max-w-full max-h-full object-contain">
+                </div>
+                
+                <!-- Added Reviews (Slot 5-14) -->
+                <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('new_rew1.JPG')">
+                    <img src="new_rew1.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=Відгук+5'" class="max-w-full max-h-full object-contain">
+                </div>
+                <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('new_rew2.JPG')">
+                    <img src="new_rew2.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=Відгук+6'" class="max-w-full max-h-full object-contain">
+                </div>
+                <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('new_rew3.JPG')">
+                    <img src="new_rew3.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=Відгук+7'" class="max-w-full max-h-full object-contain">
+                </div>
+                <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('new_rew4.JPG')">
+                    <img src="new_rew4.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=Відгук+8'" class="max-w-full max-h-full object-contain">
+                </div>
+                <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('new_rew5.JPG')">
+                    <img src="new_rew5.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=Відгук+9'" class="max-w-full max-h-full object-contain">
+                </div>
+                <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('new_rew6.JPG')">
+                    <img src="new_rew6.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=Відгук+10'" class="max-w-full max-h-full object-contain">
+                </div>
+                <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('new_rew7.JPG')">
+                    <img src="new_rew7.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=Відгук+11'" class="max-w-full max-h-full object-contain">
+                </div>
+                <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('new_rew8.JPG')">
+                    <img src="new_rew8.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=Відгук+12'" class="max-w-full max-h-full object-contain">
+                </div>
+                <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('new_rew9.JPG')">
+                    <img src="new_rew9.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=Відгук+13'" class="max-w-full max-h-full object-contain">
+                </div>
+                <div class="shrink-0 w-[280px] h-[210px] md:w-[360px] md:h-[270px] bg-gray-50 border border-gray-100 rounded-xl flex items-center justify-center cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]" onclick="openLightbox('new_rew10.JPG')">
+                    <img src="new_rew10.JPG" onerror="this.src='https://placehold.co/400x300/f0f0f0/ccc?text=Відгук+14'" class="max-w-full max-h-full object-contain">
                 </div>
             </div>
         </div>
