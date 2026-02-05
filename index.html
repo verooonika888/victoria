@@ -446,7 +446,7 @@
                 body: JSON.stringify(formData)
             })
             .then(() => {
-                if(typeof fbq !== 'undefined') fbq('track', 'Lead'); 
+                // LEAD EVENT REMOVED TO AVOID DUPLICATION
                 window.location.href = BOT_REDIRECT_URL; 
             })
             .catch(err => {
